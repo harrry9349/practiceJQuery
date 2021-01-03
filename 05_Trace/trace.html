@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>オブジェクトの走査</title>
+
+</head>
+<body>
+    <div class="main1">
+        <h2>インデックス値で特定</h2>
+        <p class="sticky">0番目のp </p>
+        <p class="sticky">1番目のp </p>
+        <p class="sticky">2番目のp </p>
+        <p class="sticky">3番目のp </p>
+        <button class="button" type="button" name="button">クリック</button>
+    </div>
+
+    <div class="main2">
+        <h2>インデックス値で特定</h2>
+        <p class="sticky">0番目のp </p>
+        <p class="sticky">1番目のp </p>
+        <p class="sticky">2番目のp </p>
+        <p class="sticky">3番目のp </p>
+        <button class="button" type="button" name="button">クリック</button>
+    </div>
+
+    <div class="main3">
+        <h2>マッチした要素を削除</h2>
+        <p class="sticky3">0番目のp </p>
+        <p class="sticky3">1番目のp </p>
+        <p class="sticky3">2番目のp </p>
+        <p class="sticky3">3番目のp </p>
+        <button class="button" id="button1" type="button" name="button1">セレクタで除外</button>
+        <button class="button" id="button2" type="button" name="button2">クロージャで除外</button>
+    </div>
+
+    <div class="main4">
+        <h2>子ノードをもつ要素の集合を得る</h2>      
+        <div class="content">
+            <ul>
+                <li>
+                    <div><span class="cat">食肉目（ネコ科）</span></div>
+                    <ul>
+                        <li>
+                            <div>
+                                <span class="cat">ネコ科</span>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <span class="notcat">カラカル属</span><br>
+                                            <span class="notcat">オセロット属</span><br>
+                                            <span class="cat">ネコ属</span><br>
+                                            <span class="notcat">ピューマ属</span><br>
+                                            <span class="notcat">ヒョウ属</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div><span class="notcat">イヌ亜目</span></div>
+                </li>
+            </ul>
+        </div>
+        <button class="button" type="button" name="button">ネコ属以外</button>
+    </div>
+
+  
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="trace.js" charset="utf-8"></script>
+</body>
+</html>
