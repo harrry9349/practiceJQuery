@@ -24,6 +24,11 @@ $(document).ready(function(){
         }).css('backgroundColor','red');
     });
         
+    //ボタン「ネコ族以外」をクリックする
+    $('.main3 button').on('click',function(){
+        alert('ボタン「ネコ族以外」がクリックされました');
+        $('.main4 button').trigger('click');
+    });
     // ネコ族以外
     $('.main4 button').on('click',function(){
         $('li > div').has('.notcat').css('backgroundColor','red').css('color','white');

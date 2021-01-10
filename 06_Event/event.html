@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>イベント</title>
+
+</head>
+<body>
+    <div class="main1">
+        <form>
+        <button class="button" type="button" name="submit">クリック</button>
+        </form>
+    </div>
+
+    <div class="main2">
+        <p class="link"><a href="https://yahoo.co.jp">クリック</a></p>
+    </div>
+
+    <div class="main3">
+        <button class="button" type="button" name="button">クリック</button>
+    </div>
+
+    <div class="main5">
+        <button class="button" type="button" name="button">ダブルクリック</button>
+    </div>
+
+
+    <div class="main4">
+        <h2>子ノードをもつ要素の集合を得る</h2>      
+        <div class="content">
+            <ul>
+                <li>
+                    <div><span class="cat">食肉目（ネコ科）</span></div>
+                    <ul>
+                        <li>
+                            <div>
+                                <span class="cat">ネコ科</span>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <span class="notcat">カラカル属</span><br>
+                                            <span class="notcat">オセロット属</span><br>
+                                            <span class="cat">ネコ属</span><br>
+                                            <span class="notcat">ピューマ属</span><br>
+                                            <span class="notcat">ヒョウ属</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div><span class="notcat">イヌ亜目</span></div>
+                </li>
+            </ul>
+        </div>
+        <button class="button" type="button" name="button">ネコ属以外</button>
+    </div>
+
+    <div class="main6">
+        <h3>マウスの遊び場</h3>
+        <p class="mouseground">マウスカーソルを当てる</p>
+    </div>
+
+    <div class="main7">
+        <div class="outercage">
+            <h3>檻の外</h3>
+            <div class="innercage">
+                <p>檻の中</p>
+            </div>
+        </div>
+        <div class="desc"></div>
+    </div> 
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="event.js" charset="utf-8"></script>
+</body>
+</html>
