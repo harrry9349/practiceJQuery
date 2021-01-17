@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>イベントハンドラ</title>
+
+</head>
+<body>
+    <div class="main">
+        <h1>商品</h1>
+        <p>データをクリックして下さい。</p>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>商品名</th>
+                <th>単価</th>
+                <th>数量</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>フリスビー</td>
+                <td>1000</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>魚</td>
+                <td>300</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>焼酎</td>
+                <td>2500</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>パスタ</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+        </table>
+        <button class="button" type="button">イベントハンドラを解除</button>
+        <p>ボタンを押すとデータをクリックしてもアラートが出なくなる</p>
+    </div>
+
+    <div class="main1">
+        <h1>フォーム</h1>
+        <p>入力領域にフォーカスすると下に値が記録される</p>
+        <p>トリガーボタンを押すと電話番号の値が記録される</p>
+        <form>
+            姓<br><input class="form-input" type="text" name="lastname" value="いとう"><br>
+            名<br><input class="form-input" type="text" name="firstame" value="たくろう"><br>
+            メールアドレス<br><input class="form-input" type="text" name="email" value="aaaa@xxxx.xx.xx.xx"><br>
+            電話番号<br><input class="form-input" type="text" name="phone" value="00011112222"><br>
+            <button class="button" type="button" name="submit">トリガー</button>
+        </form>
+        <div class="desc"></div>
+    </div>
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="event.js" charset="utf-8"></script>
+</body>
+</html>
