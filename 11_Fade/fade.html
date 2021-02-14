@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>CSS</title>
+
+        <style>
+            .main-inner{
+                background-color:red;
+                float:left;
+                margin:5px;
+                width:50px;
+                height:30px;
+            }
+
+            .main2{
+                float:none;
+                margin-top:20px;
+            }
+
+            .main-inner2{
+                position:absolute;
+                width:400px;
+                height:65px;
+                font-size:36px;
+                text-align:center;
+                color:white;
+                background-color: blue;
+                padding-top:25px;
+                display:none;
+            }
+            span{
+                display:none;
+            }
+        </style>
+</head>
+<body>
+    <div class="main">
+        <input type="button" class="anime-on" value="アニメあり">
+        <input type="button" class="anime-off" value="アニメなし">
+        <div class="main-inner"></div>
+    </div>
+
+    <div class="main2">
+        <button class="fader">Hello,Worldを表示</button>
+        <button class="fader2">Hello,Worldを非表示</button>
+        <div class="main-inner2"><span>Hello,World!</span></div>
+    </div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="fade.js" charset="utf-8"></script>
+</body>
+</html>
