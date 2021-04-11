@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <title>SVG</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.16/svg.min.js" integrity="sha512-p3Tp2zn+wApBreZCgRkmMwnfpN8MUPXzzOihXx7iGYXqE7t6m9drY8HeyMeeFuDWiTFKrGUrq3jpbT0vX6zY/Q==" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+    <div class="main">
+        <h1>描画する</h1>
+        <div class="content">
+            <svg id="mySVG1">
+                <rect x="0" y="0" fill="red" width="100" height="80" />
+                <rect x="10" y="10" fill="orange" width="50" height="40" />
+            </svg>
+            <svg id="mySVG2">
+                <rect x="0" y="0" fill="red" width="100" height="80" />
+                <rect x="10" y="10" fill="orange" width="50" height="40" />
+                <rect x="20" y="20" fill="blue" width="30" height="20" />
+            </svg>
+            <p>円のアニメーションの生成</p>
+            <form>
+                <button class="button1" type="button" name="button1">描画！</button>
+            </form>
+            <svg width="100%" height="300" viewBox="0 0 200 200" id="mySVG3">
+            </svg>
+        </div>
+    </div>
+
+    <div class="main2">
+        <p>ドラッグできる円の生成</p>
+    <form>
+            <button class="button2" type="button" name="button2">描画！</button>
+    </form>
+    <svg id="mySVG4" viewbox="0 0 200 200" width="100%" height="800">
+    </svg>
+
+    </div>
+
+    <script src="svgtest.js" charset="utf-8"></script>
+    <script src="snap.svg-min.js" charset="utf-8"></script>
+</body>
+</html>
