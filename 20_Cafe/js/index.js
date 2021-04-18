@@ -1,7 +1,7 @@
 $(document).ready(function(){
     let tmp = 0;
     $('.desc').hide(0);
-    $(".page-title").on('click',function(){
+    $('.page-title').on('click',function(){
         if(tmp == 0){
             $('#home').css('background-image','url(../img/3802238_m.jpg),linear-gradient(#c9ffbf,#ffafbd)');
             $('.attention').hide(400);
@@ -14,12 +14,12 @@ $(document).ready(function(){
         }        
     });
 
-    $(".button").on('mouseover',function(){
-        $(".button").text('Welcome!');
+    $('.button').on('mouseover',function(){
+        $(this).text('Welcome!');
     });
 
-    $(".button").on('mouseout',function(){
-        $(".button").text('メニューを見る');
+    $('.button').on('mouseout',function(){
+        $(this).text('メニューを見る');
     });
 
 
